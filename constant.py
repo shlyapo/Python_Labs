@@ -1,0 +1,3 @@
+CONST_K = 10
+
+CONST_N = 4
