@@ -1,4 +1,3 @@
-from statistics import median
 import func
 import constant
 
@@ -11,11 +10,11 @@ def main():
     text = text.replace("?", ".").replace("!", ".").lower()
 
 
-    #mr = ['mr.', 'ms.', 'mrs.', 'dr.', 'ex.', 'etc.', 'co.',  'st.', 'ave.', 'jr.', 'sr.', 'in', 'cm.', 'kg.']
+    mr = ['mr.', 'ms.', 'mrs.', 'dr.', 'ex.', 'etc.', 'co.',  'st.', 'ave.', 'jr.', 'sr.', 'in', 'cm.', 'kg.']
 
-    #for elem in text:
-        #if elem is mr:
-            #elem = elem[:(len(elem)-1)]
+    for elem in text:
+        if elem is mr:
+            elem = elem[:(len(elem)-1)]
 
     text = text.split(".")
     sentence = dict()
